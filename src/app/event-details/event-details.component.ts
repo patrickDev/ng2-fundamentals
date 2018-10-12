@@ -10,6 +10,7 @@ export class EventDetailsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
