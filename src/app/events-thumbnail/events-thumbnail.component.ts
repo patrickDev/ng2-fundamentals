@@ -14,4 +14,6 @@ export class EventsThumbnailComponent implements OnInit {
   ngOnInit() {
   }
 
+ 
+
 }
