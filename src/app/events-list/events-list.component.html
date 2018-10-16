@@ -4,7 +4,7 @@
   <hr>
   <div class="row">
     <div *ngFor="let event of events" class="col-md-5">
-      <events-thumbnail #thumbnail  [event] ="event"></events-thumbnail>
+      <events-thumbnail  (click)="handleTumbnailClick(event.name)" [event] ="event"></events-thumbnail>
     </div>
   </div> 
 </div>

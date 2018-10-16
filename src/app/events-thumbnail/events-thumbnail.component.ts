@@ -1,4 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { toBase64String } from '@angular/compiler/src/output/source_map';
+
 
 
 @Component({
@@ -9,11 +11,10 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class EventsThumbnailComponent implements OnInit {
 
  @Input() event: any
- @Output() eventClick = new EventEmitter()
-
-  ngOnInit() {
-  }
-
+ //@Output() eventClick = new EventEmitter()
  
-
+  
+  ngOnInit() {
+  } 
+ 
 }
