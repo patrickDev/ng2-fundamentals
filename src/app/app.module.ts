@@ -7,6 +7,7 @@ import { EventsThumbnailComponent } from './events-thumbnail/events-thumbnail.co
 import { EventDetailsComponent } from './event-details/event-details.component';
 import { NavComponent } from './nav/nav.component';
 import { EventRoutingModule } from './event-routing.module';
+import { CreateEventComponent } from './create-event/create-event.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { EventRoutingModule } from './event-routing.module';
     EventsListComponent,
     EventsThumbnailComponent,
     EventDetailsComponent,
-    NavComponent
+    NavComponent,
+    CreateEventComponent
   ],
   imports: [
     BrowserModule,
