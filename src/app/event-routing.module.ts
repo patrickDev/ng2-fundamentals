@@ -8,7 +8,7 @@ import { ErrorsComponent } from './errors/errors.component';
 import { EventRouteActivatorService } from './event-route-activator.service';
 
 export const routes:Routes = [
-  { path: 'events/new', component:CreateEventComponent},
+  { path: 'events/new', component:CreateEventComponent, canDeactivate:['canDeactivateCreateEvent']},
   { path: 'events', component: EventsListComponent},
   { path: 'events/:id', component:EventDetailsComponent, canActivate: [EventRouteActivatorService]}, 
   { path: '404', component: ErrorsComponent},

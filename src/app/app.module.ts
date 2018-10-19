@@ -24,7 +24,15 @@ import { ErrorsComponent } from './errors/errors.component';
     BrowserModule,
     EventRoutingModule
   ],
-  providers: [],
+  providers: [
+    {provide:'canDeactivateCreateEvent', useValue: CheckDirtyState}
+  ],
   bootstrap: [EventsAppComponent]
 })
 export class AppModule { }
+
+export function CheckDirtyState(component:CreateEventComponent){
+ if(component.isDirty)
+    return window.confirm('You have not saved this event, do you really want to cancel?')
+  return true
+}
