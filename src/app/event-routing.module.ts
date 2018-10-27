@@ -13,7 +13,8 @@ export const routes:Routes = [
   { path: 'events', component: EventsListComponent, resolve:{events:EventsListResolverService}},
   { path: 'events/:id', component:EventDetailsComponent, canActivate: [EventRouteActivatorService]}, 
   { path: '404', component: ErrorsComponent},
-  { path: '', redirectTo: '/events', pathMatch: 'full'}
+  { path: '', redirectTo: '/events', pathMatch: 'full'},
+  { path: 'user-profile', loadChildren: './user-profile/user.module#UserModule'}
 ]
 
 @NgModule({

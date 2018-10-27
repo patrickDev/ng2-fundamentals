@@ -18,7 +18,7 @@ import { ErrorsComponent } from './errors/errors.component';
     EventDetailsComponent,
     NavComponent,
     CreateEventComponent,
-    ErrorsComponent
+    ErrorsComponent,
   ],
   imports: [
     BrowserModule,
